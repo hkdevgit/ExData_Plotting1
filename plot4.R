@@ -28,7 +28,7 @@ plot4 <- function()
   plot(EnergyFeb2$datetime, EnergyFeb2$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
   lines(EnergyFeb2$datetime, EnergyFeb2$Sub_metering_2, col="red")
   lines(EnergyFeb2$datetime, EnergyFeb2$Sub_metering_3, col="blue")
-  legend("topright", lwd=0.75, cex=0.75, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+  legend("topright", lwd=0.75, cex=0.75, col=c("black", "red", "blue"), bty="n", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     
   ## datetime/Voltage plot
   plot(EnergyFeb2$datetime, EnergyFeb2$Voltage, type="l", xlab="datetime", ylab="Voltage")
