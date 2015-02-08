@@ -5,6 +5,7 @@
 plot3 <- function()
 {
   ## Read data table as string, not factors.
+  ## (60 mins/h * 24 hr/day * 90 days) = 129600 samples
   Data <- read.csv("household_power_consumption.txt", sep=";", header=TRUE, nrows=129600, na.strings="?", stringsAsFactors=FALSE)
   Data <- na.omit(Data)
   EnergyFeb2 <- Data[Data$Date %in% c("1/2/2007", "2/2/2007"),]
